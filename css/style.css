@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+}
+
+#wrapper{
+    display: grid;
+    height: 200vh;
+    width: 100vw;
+    grid-template-rows: 10vh auto 20vh;
+    grid-template-columns: 10% 10% 60% 10% 10% ;
+    grid-template-areas:
+    'hd hd hd hd hd'
+    'mn mn mn mn mn'
+    'ft ft ft ft ft'
+    ;
+}
+
+
+header {
+    background-color: blueviolet;
+    grid-area: hd;
+}
+
+nav{
+    background-color: crimson;
+    grid-area: nav;
+}
+
+main{
+    background-color: burlywood;
+    grid-area: mn;
+    display: grid;
+    gap: 40px;
+}
+
+
+.mainImg{
+    background-color: cadetblue;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+}
+
+.smallerImg{
+    background-color: yellow;
+}
+
+.advice_page{
+
+}
+
+footer{
+    background-color: hotpink;
+    grid-area: ft;
+}
+
