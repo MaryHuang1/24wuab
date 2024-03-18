@@ -15,10 +15,24 @@ body{
     ;
 }
 
+h1,h2,h3,h4{
+    margin-bottom: 8px;
+    font-weight: 500;
+    line-height: 1,2;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+}
 
 header {
     background-color: blueviolet;
     grid-area: hd;
+    display: flex;
+    flex-direction: row;
+    row-gap: 10px;
+    column-gap: 10px;
 }
 
 nav{
@@ -30,23 +44,51 @@ main{
     background-color: burlywood;
     grid-area: mn;
     display: grid;
-    gap: 40px;
+    gap: 50px;
+    padding: 35px;
 }
 
 
-.mainImg{
+.main_container{
+    display: grid;
     background-color: cadetblue;
     margin-left: auto;
     margin-right: auto;
     width: 90vw;
+    padding: 20px;
+    gap: 40px;
+    
 }
 
-.smallerImg{
+.image{
     background-color: yellow;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 190vh ;
+    height: 90vh ;
+    border-radius: 10px;
+    justify-content: flex-end;
+    row-gap: 10px;
+    column-gap: 30px;
 }
 
-.advice_page{
+.icon_image{
+    background-color: maroon;
+    width: 25vw;
+    height: 15vh;
+    border-radius: 25px;
+    align-self: flex-end;
+}
 
+.smaller_container{
+    background-color: ghostwhite;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 190vh;
+    height: 50vh;
+    border-radius: 15px;
 }
 
 footer{
