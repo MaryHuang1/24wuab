@@ -6,7 +6,7 @@ body{
     display: grid;
     height: 200vh;
     width: 100vw;
-    grid-template-rows: 10vh auto 20vh;
+    grid-template-rows: 10vh auto 30vh;
     grid-template-columns: 10% 10% 60% 10% 10% ;
     grid-template-areas:
     'hd hd hd hd hd'
@@ -15,15 +15,22 @@ body{
     ;
 }
 
+.rammetto-one-regular {
+    font-family: "Rammetto One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+ }
+  
 h1,h2,h3,h4{
     margin-bottom: 8px;
-    font-weight: 500;
+    font-weight: 5000;
     line-height: 1,2;
+    text-align: center;
+    font-family: rametto;
 }
 
-ul{
-    display: flex;
-    flex-direction: row;
+li{
+    list-style-type: none;
 }
 
 header {
@@ -33,11 +40,31 @@ header {
     flex-direction: row;
     row-gap: 10px;
     column-gap: 10px;
+    justify-content: flex-end;
+    align-content: space-around;
+    
 }
 
 nav{
     background-color: crimson;
     grid-area: nav;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 50vw;
+}
+
+nav a{
+    padding: 20px 50px;
+    text-decoration: none;
+}
+
+.logo{
+
+
 }
 
 main{
@@ -57,6 +84,7 @@ main{
     width: 90vw;
     padding: 20px;
     gap: 40px;
+    border-radius: 5px;
     
 }
 
@@ -69,16 +97,29 @@ main{
     height: 90vh ;
     border-radius: 10px;
     justify-content: flex-end;
-    row-gap: 10px;
-    column-gap: 30px;
 }
 
-.icon_image{
+img{
+    border-radius: 30px;
+    padding: 20px;
+
+}
+
+.weapon_container{
     background-color: maroon;
-    width: 25vw;
-    height: 15vh;
-    border-radius: 25px;
+    display: grid;
+    width: 10vw;
+    height: 70vh;
+    border-radius: 15px;
     align-self: flex-end;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.weapon_container img{
+    width: 13vh;
+    height: 10vh;
 }
 
 .smaller_container{
@@ -91,8 +132,41 @@ main{
     border-radius: 15px;
 }
 
+.smaller_container img{
+    width: 200px;
+    height: 200px;
+    margin-top: 25px;
+}
+
+.weapon{
+
+}
+
+.weapon_role{
+
+}
+
 footer{
     background-color: hotpink;
     grid-area: ft;
+}
+
+.footer_wrapper{
+    background-color: dodgerblue;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    width: 190vh;
+    height: 30vh;
+    align-items: stretch;
+}
+
+.tiny_footer{
+    background-color: blueviolet;
+    width: 60vh;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
 }
 
