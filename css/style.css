@@ -1,5 +1,7 @@
 body{
     margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 #wrapper{
@@ -15,26 +17,23 @@ body{
     ;
 }
 
-.rammetto-one-regular {
+
+ a,h1,h2,h3,h4{
+    margin-bottom: 8px;
+    line-height: 1,2;
+    text-align: center;
     font-family: "Rammetto One", sans-serif;
     font-weight: 400;
     font-style: normal;
- }
-  
-h1,h2,h3,h4{
-    margin-bottom: 8px;
-    font-weight: 5000;
-    line-height: 1,2;
-    text-align: center;
-    font-family: rametto;
+    color: aliceblue;
 }
 
-li{
+li,a {
     list-style-type: none;
 }
 
 header {
-    background-color: blueviolet;
+    background-color: rgb(32, 32, 32);
     grid-area: hd;
     display: flex;
     flex-direction: row;
@@ -42,11 +41,10 @@ header {
     column-gap: 10px;
     justify-content: flex-end;
     align-content: space-around;
-    
 }
 
 nav{
-    background-color: crimson;
+    background-color: rgb(32, 32, 32);
     grid-area: nav;
     overflow: hidden;
     display: flex;
@@ -58,13 +56,13 @@ nav{
 }
 
 nav a{
-    padding: 20px 50px;
     text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .logo{
-
-
+    text-align: left;
 }
 
 main{
@@ -73,12 +71,72 @@ main{
     display: grid;
     gap: 50px;
     padding: 35px;
+    background-image: url("background.jpg");
 }
+
+.title{
+    text-align: center;
+    padding: 20px 30px;
+}
+
+.start_page{
+    width: 30vh;
+    height: 30vh;
+    padding: 20px;
+}
+.leaderboard_main{
+    display: flex;
+    background-color: beige;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    gap: 30px;
+    width: 85vw;
+    border-radius: 15px;
+    height: auto;
+    justify-content: center;
+}
+
+.placement_container{
+    background-color: gold;
+    display: grid;
+    width: 25vw;
+    height: auto;
+    border-radius: 15px;
+}
+
+
+
+.leaderboard_score{
+    background-color: aqua;
+    display: flex;
+    width: 20vw;
+    height: 30vh;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.people{
+    background-color: crimson;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20vw;
+    height: 10vh;
+    padding: 20px,30px;
+    border-radius: 15px;
+    gap: 20px;
+    text-align: center;
+}
+
+
 
 
 .main_container{
     display: grid;
-    background-color: cadetblue;
+    background-color: aliceblue;
     margin-left: auto;
     margin-right: auto;
     width: 90vw;
@@ -89,7 +147,7 @@ main{
 }
 
 .image{
-    background-color: yellow;
+    background-color: grey;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -128,31 +186,62 @@ img{
     margin-left: auto;
     margin-right: auto;
     width: 190vh;
-    height: 50vh;
+    height: 40vh;
     border-radius: 15px;
+    align-content: flex-end;
+
 }
 
 .smaller_container img{
-    width: 200px;
-    height: 200px;
+    width: 10vw;
+    height: 20vh;
     margin-top: 25px;
 }
 
 .weapon{
+    background-color: darkorchid;
+    order: 1;
+    align-self: flex-start;
+    width: auto;
+    height: 40vh;
+    border-radius: 15px;
 
 }
 
 .weapon_role{
+    background-color: gold;
+    order: 2;
+    height: auto;
+    width: auto;
+    flex-grow: 2;
+    border-radius: 15px;
 
 }
 
+.submit_container{
+    background-color: darkslategray;
+    width: 30vw;
+    height: 20vh;
+}
+
+.submit_button{
+    width: 20vw;
+    height: 15vh;
+    background-color: indigo;
+    text-align: ¨center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
 footer{
-    background-color: hotpink;
+    background-color: rgb(32, 32, 32);
     grid-area: ft;
 }
 
 .footer_wrapper{
-    background-color: dodgerblue;
+    background-color: rgb(32, 32, 32);
     display: flex;
     flex-direction: row;
     margin-left: auto;
@@ -163,7 +252,7 @@ footer{
 }
 
 .tiny_footer{
-    background-color: blueviolet;
+    background-color: rgb(32, 32, 32);
     width: 60vh;
     padding: 20px 50px;
     display: flex;
