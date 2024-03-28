@@ -62,21 +62,25 @@ nav a{
 }
 
 .logo{
+    margin-right: 400px;
+}
+
+.logo h2{
     text-align: left;
 }
 
 main{
-    background-color: burlywood;
+    background-color: black;
     grid-area: mn;
     display: grid;
     gap: 50px;
     padding: 35px;
-    background-image: url("background.jpg");
+    background-image: url("img/background.jpg");
 }
 
 .title{
     text-align: center;
-    padding: 20px 30px;
+    margin-bottom: auto;
 }
 
 .start_page{
@@ -98,7 +102,7 @@ main{
 }
 
 .placement_container{
-    background-color: gold;
+    background-color: rgb(56, 56, 56);
     display: grid;
     width: 25vw;
     height: auto;
@@ -147,7 +151,7 @@ main{
 }
 
 .image{
-    background-color: grey;
+    background-color: rgb(56, 56, 56);
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -160,19 +164,19 @@ main{
 img{
     border-radius: 30px;
     padding: 20px;
-
 }
 
 .weapon_container{
-    background-color: maroon;
+    background-color: rgb(32, 32, 32);
     display: grid;
     width: 10vw;
-    height: 70vh;
-    border-radius: 15px;
+    height: 76vh;
+    border-radius: 10vh;
     align-self: flex-end;
     padding: 20px 30px;
     margin-bottom: 20px;
-    margin-right: 10px;
+    margin-right: 10px; 
+
 }
 
 .weapon_container img{
@@ -199,7 +203,7 @@ img{
 }
 
 .weapon{
-    background-color: darkorchid;
+    background-color: rgb(32, 32, 32);  
     order: 1;
     align-self: flex-start;
     width: auto;
@@ -209,7 +213,7 @@ img{
 }
 
 .weapon_role{
-    background-color: gold;
+    background-color: rgb(56, 56, 56);
     order: 2;
     height: auto;
     width: auto;
@@ -217,6 +221,8 @@ img{
     border-radius: 15px;
 
 }
+
+
 
 .submit_container{
     background-color: darkslategray;
@@ -227,7 +233,7 @@ img{
 .submit_button{
     width: 20vw;
     height: 15vh;
-    background-color: indigo;
+    background-color: rgb(32, 32, 32);
     text-align: ¨center;
     margin-left: auto;
     margin-right: auto;
@@ -249,6 +255,7 @@ footer{
     width: 190vh;
     height: 30vh;
     align-items: stretch;
+
 }
 
 .tiny_footer{
@@ -259,3 +266,6 @@ footer{
     flex-direction: column;
 }
 
+.tiny_footer li, a{
+    list-style-type: none;
+}
