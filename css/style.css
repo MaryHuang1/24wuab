@@ -70,12 +70,11 @@ nav a{
 }
 
 main{
-    background-color: black;
     grid-area: mn;
     display: grid;
     gap: 50px;
     padding: 35px;
-    background-image: url("img/background.jpg");
+    background-color: rgb(230, 65, 50);
 }
 
 .title{
@@ -83,36 +82,71 @@ main{
     margin-bottom: auto;
 }
 
+
 .start_page{
-    width: 30vh;
-    height: 30vh;
+    background-color: rgb(56, 56, 56);
+    width: 90vw;
+    height: 80vh;
     padding: 20px;
+    border-radius: 15px;
 }
+.start_page img{
+    width: 80vw;
+    height: 70vh;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.selection_container{
+    background-color: rgb(56, 56, 56);
+    width: 90vw;
+    height: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 15px;
+}
+
+.box_container{
+    background-color: coral;
+    width: 20vw;
+    height: 20vw;
+    text-align: center;
+    align-self: center;
+    border-radius: 15px;
+    padding: 20px 30px;
+}
+
 .leaderboard_main{
     display: flex;
-    background-color: beige;
+    background-color: aliceblue;
     margin-left: auto;
     margin-right: auto;
     flex-direction: row;
     gap: 30px;
     width: 85vw;
     border-radius: 15px;
-    height: auto;
+    height: 100vh;
     justify-content: center;
+    align-content: center;
 }
 
 .placement_container{
     background-color: rgb(56, 56, 56);
     display: grid;
     width: 25vw;
-    height: auto;
+    height: 80vh;
     border-radius: 15px;
+    margin-top: 50px;
 }
 
 
 
 .leaderboard_score{
-    background-color: aqua;
+    background-color: rgb(32, 32, 32);
     display: flex;
     width: 20vw;
     height: 30vh;
@@ -124,7 +158,7 @@ main{
 }
 
 .people{
-    background-color: crimson;
+    background-color: rgb(32, 32, 32);
     margin-left: auto;
     margin-right: auto;
     width: 20vw;
@@ -225,7 +259,7 @@ img{
 
 
 .submit_container{
-    background-color: darkslategray;
+    background-color: transparent;
     width: 30vw;
     height: 20vh;
 }
@@ -268,4 +302,6 @@ footer{
 
 .tiny_footer li, a{
     list-style-type: none;
+    text-decoration: none;
+
 }
